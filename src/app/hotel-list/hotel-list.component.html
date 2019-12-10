@@ -1,0 +1,31 @@
+
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Host Name</th>
+        <th scope="col">Neighbourhood Group</th>
+        <th scope="col">Neighbourhood</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">Room Type</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hotel of Hotels;let i = index">
+        <td scope="col">{{i+1}}</td>
+        <td scope="col">{{hotel.name}}</td>
+        <td scope="col">{{hotel.host_name}}</td>
+        <td scope="col">{{hotel.neighbourhood_group}}</td>
+        <td scope="col">{{hotel.neighbourhood}}</td>
+        <td scope="col">{{hotel.latitude}}</td>
+        <td scope="col">{{hotel.longitude}}</td>
+        <td scope="col">{{hotel.room_type}}</td>
+        <td scope="col">{{hotel.price}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

@@ -1,0 +1,15 @@
+<h2 style="margin: 20px;">Search By Name</h2>
+<div class="col-sm-6" style="margin-top: 20px;">
+<input type="text" #name class="form-control">
+<button class="btn btn-success" style="margin-top:20px ;" (click)="SearchByName(name.value)">Search</button>
+</div>
+<ul *ngFor="let data of listData" style="margin: 20px;">
+    <li>Name : {{data.name}}</li>
+    <li>Host Name : {{data.host_name}}</li>
+    <li>Neighbourhood Group{{data.neighbourhood_group}}</li>
+    <li>Neighbourhood : {{data.neighbourhood}}</li>
+    <li>Latitude : {{data.latitude}}</li>
+    <li>Longitude{{data.longitude}}</li>
+    <li> Room Type :  {{data.room_type}}</li>
+    <li>Price : {{data.price}}</li>
+</ul>
